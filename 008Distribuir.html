@@ -13,6 +13,8 @@
         <meta name="description" content="Una descripción de todo lo necesario para crear estas páginas.">
       
       
+        <link rel="canonical" href="https://cuadernosdenotas.github.io/creandoestesitio/008Distribuir.html">
+      
       
       
         <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
@@ -111,7 +113,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="index.html" title="Creando este sitio" class="md-header-nav__button md-logo">
+        <a href="https://cuadernosdenotas.github.io/creandoestesitio/" title="Creando este sitio" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -173,7 +175,7 @@
   
 
 
-  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+  <a href="https://github.com/cuadernosdenotas/creandoestesitio/" title="Repositorio en GitHub" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -182,7 +184,7 @@
       </div>
     
     <div class="md-source__repository">
-      creandoestesitio
+      cuadernosdenotas/creandoestesitio
     </div>
   </a>
 
@@ -207,7 +209,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="index.html" title="Creando este sitio" class="md-nav__button md-logo">
+    <a href="https://cuadernosdenotas.github.io/creandoestesitio/" title="Creando este sitio" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -222,7 +224,7 @@
   
 
 
-  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+  <a href="https://github.com/cuadernosdenotas/creandoestesitio/" title="Repositorio en GitHub" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -231,7 +233,7 @@
       </div>
     
     <div class="md-source__repository">
-      creandoestesitio
+      cuadernosdenotas/creandoestesitio
     </div>
   </a>
 
@@ -554,6 +556,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/cuadernosdenotas/creandoestesitio/edit/master/docs/008Distribuir.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="distribuyendo-el-sitio-web">Distribuyendo el sitio web</h1>
 <p>Una vez finalizada la construcción del sitio web, vamos a publicarlo en <em>GitHub</em>. Podemos subir los documentos de tres formas:</p>
@@ -600,21 +604,20 @@ miProyecto/miProyecto/...archivos html a subir...
 
 <p>Y en la carpeta destino, además de los archivos <code class="codehilite"><span class="na">.git</span></code>, <code class="codehilite"><span class="na">.gitignore</span></code>, etc. que <em>Github Desktop</em> había creado, ahora tenemos <code class="codehilite">index.html</code> y todo lo demás.</p>
 <h2 id="subiendo-los-resultados">Subiendo los resultados</h2>
-<p>Seguidamente volvemos a <em>Desktop</em> y pulsamos en el menú <em>Repository &gt; Settings</em>. En el apartado <em>Ignored files</em>, introducimos la lista de archivos que no queremos subir, si hubiera alguno.</p>
+<p>Seguidamente volvemos a <em>Github Desktop</em> y pulsamos en el menú <em>Repository &gt; Settings</em>. En el apartado <em>Ignored files</em>, introducimos la lista de archivos que no queremos subir, si hubiera alguno.</p>
 <p>Finalmente pulsamos en el botón <code class="codehilite">[publish]</code>. Nos aseguramos que en nuestra cuenta de <em>GitHub</em> no hay ya un repositorio con ese nombre.</p>
-<p>!!! Note: &ldquo;Nota:&rdquo;</p>
-<div class="codehilite"><pre><span></span>Si obtenemos un mensaje:
-
-    Cannot push these commits as they contain an email address marked as private on GitHub.
-
-... debemos entrar en la configuración de nuestro usuario *GitHub*, apartado *e-mail*, y desmarcar *Block command line pushes that expose my email*
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Si obtenemos un mensaje:</p>
+<div class="codehilite"><pre><span></span>Cannot push these commits as they contain an email address marked as private on GitHub.
 </pre></div>
 
 
+<p>&hellip; debemos entrar en la configuración de nuestro usuario <em>GitHub</em>, apartado <em>e-mail</em>, y desmarcar <em>Block command line pushes that expose my email</em></p>
+</div>
 <p>En el panel principal de <em>GitHub Desktop</em> aparece la lista de archivos a subir. En el recuadro &ldquo;Summary required&rdquo; introducimos una descripción corta de la operación a realizar </p>
 <p><img alt="Screenshot" src="img/distribuir004.png" /></p>
-<p>Y pulsamos en el botón <em>Commit to master</em>.</p>
-<p>En la barra superior pulsamos en el enlace <em>Push origin</em>, lo que ejecuta la transmisión.</p>
+<p>Y pulsamos en el botón <em>Commit to master</em>. Seguidamente, en la barra superior pulsamos en el enlace <em>Push origin</em>, lo que ejecuta la transmisión.</p>
 <h2 id="activar-github-pages">Activar Github Pages</h2>
 <p>Desde el navegador web, entramos en nuestra cuenta de GitHub. Véase que se ha creado un nuevo proyecto:</p>
 <p><img alt="Screenshot" src="img/distribuir005.png" /></p>
@@ -624,7 +627,7 @@ miProyecto/miProyecto/...archivos html a subir...
 <div class="codehilite"><pre><span></span>mkdocs build --clean
 </pre></div>
 
-<p>lo que regenera la carpeta con los resultados. Seguidamente reiniciamos <em>GitHub Desktop</em>, donde veremos una lista de los archivos que han sufrido cambios. Pulsamos en <code class="codehilite"><span class="p">[</span><span class="n">Fetch</span> <span class="n">Origin</span><span class="p">]</span></code>, introducimos un comentario corto y pulsamos en el botón <code class="codehilite">[Commit to master]</code>. Finalmente pulsamos en <code class="codehilite"><span class="p">[</span><span class="n">Push</span> <span class="n">origin</span><span class="p">]</span></code>.   </p>
+<p>lo que regenera la carpeta con los resultados. Seguidamente reiniciamos <em>GitHub Desktop</em>, donde veremos la lista de los archivos que han sufrido cambios. Pulsamos en <code class="codehilite"><span class="p">[</span><span class="n">Fetch</span> <span class="n">Origin</span><span class="p">]</span></code>, introducimos un comentario corto y pulsamos en el botón <code class="codehilite">[Commit to master]</code>. Finalmente pulsamos en <code class="codehilite"><span class="p">[</span><span class="n">Push</span> <span class="n">origin</span><span class="p">]</span></code>.   </p>
 <h2 id="nombres-de-dominio">Nombres de dominio</h2>
 <p>GitHub Pages permite nombres de dominio a la medida para nuestro sitio, si tenemos uno en propiedad. Tenemos que añadir un archivo <code class="codehilite">CNAME</code> en la carpeta principal del proyecto. El archivo debe contener una única línea de texto con el nombre del dominio. Véase el propio archivo CNAME de la documentación de mkDocs.</p>
 <p>Si esto no funciona, véase <a href="https://help.github.com/articles/troubleshooting-custom-domains/"><em>troubleshooting custom domains</em></a>.</p>
