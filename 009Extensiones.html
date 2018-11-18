@@ -672,8 +672,8 @@
                 
                 
                 <h1 id="extensiones">Extensiones</h1>
-<p>Ahora que ya dominamos la creación de un sitio web, vamos a profundizar en las características que <em>MkDocs</em> añade a la sintaxis estándar <em>markdown</em>.</p>
-<p>Ya hemos visto que existen diferentes versiones de <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. La usada por <a href="https://www.mkdocs.org">MkDocs</a> es <a href="https://python-markdown.github.io/">Python-Markdown</a>, una biblioteca disponible para escribir programas en lenguaje Python. <a href="https://python-markdown.github.io/">Python-Markdown</a> se ajusta bastante bien a la <a href="https://daringfireball.net/projects/markdown/">versión original</a>, aunque hay algunas <a href="https://python-markdown.github.io/#differences">diferencias</a> de menor importancia. </p>
+<p>Ahora que ya tenemos dominada la creación de un sitio web, vamos a profundizar en las características que <em>MkDocs</em> añade a la sintaxis estándar <em>markdown</em>.</p>
+<p>Ya hemos visto que existen diferentes <a href="https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors">versiones</a> de <em>Markdown</em>. La usada por <a href="https://www.mkdocs.org">MkDocs</a> es <a href="https://python-markdown.github.io/">Python-Markdown</a>, una biblioteca disponible para escribir programas en lenguaje Python. <a href="https://python-markdown.github.io/">Python-Markdown</a> se ajusta bastante bien a la <a href="https://daringfireball.net/projects/markdown/">versión original</a>, aunque hay algunas <a href="https://python-markdown.github.io/#differences">diferencias</a> de menor importancia. </p>
 <p>En este capítulo echaremos un vistazo a las <a href="https://python-markdown.github.io/extensions/">extensiones</a> incorporadas por <a href="https://www.mkdocs.org">MkDocs</a>, así como alguna más de bibliotecas de terceros.</p>
 <h2 id="enlaces-internos">Enlaces internos</h2>
 <p>La <a href="https://daringfireball.net/projects/markdown/syntax#link">sintaxis estándar de enlaces</a> es la siguiente:</p>
@@ -793,7 +793,7 @@ Texto del documento.
 <p>Para usar un carácter <code class="codehilite">|</code> como texto regular de una celda, escaparlo precedido de una barra invertida.</p>
 <h2 id="bloques-de-codigo-delimitados">Bloques de código delimitados</h2>
 <p>En el estándar <em>markdown</em>, un bloque sangrado con cuatro espacios será considerado como código fuente, mostrado con un tipo de letra especial, y respetados los saltos de línea y espaciado extra.</p>
-<p>En la línea de otras versiones <em>markdown</em>, MkDocs incluye la extensión <a href="https://python-markdown.github.io/extensions/fenced_code_blocks/">fenced code blocks</a>, que es una alternativa a los bloques de código sangrados. Se usa la sintaxis <a href="https://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks">PHP Markdown Extra</a>.</p>
+<p>En línea con otras versiones <em>markdown</em>, MkDocs incluye la extensión <a href="https://python-markdown.github.io/extensions/fenced_code_blocks/">fenced code blocks</a>, que es una alternativa a los bloques de código sangrados. Se usa la sintaxis <a href="https://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks">PHP Markdown Extra</a>.</p>
 <p>Un bloque de código comienza por una línea formada por tres o más caracteres <code class="codehilite">~</code> o bien acentos invertidos <code class="codehilite"></code> `. Por ejemplo:</p>
 <div class="codehilite"><pre><span></span>~~~~~~~~~~~~~~~~~~~~~
 texto
@@ -836,7 +836,7 @@ Línea en blanco siguiente
 </pre></div>
 
 <p>Para que esta extensión funcione, tenemos que tener instalada la biblioteca <a href="http://pygments.org">pygments</a> de python. Se instala con el comando:</p>
-<div class="codehilite"><pre><span></span>pip install Pygments
+<div class="codehilite"><pre><span></span>pip install pygments
 </pre></div>
 
 <p>Comprobamos que está instalada con:</p>
@@ -854,8 +854,8 @@ Línea en blanco siguiente
 <p>Las líneas <em>shebang</em> son aquellas que comienzan con la pareja de caracteres <code class="codehilite">#!</code> y se utilizan en los programas para identificar el lenguaje utilizado y el compilador a usar.</p>
 </div>
 <p>Otra forma de identificar el lenguaje en el caso de bloques sangrados es:</p>
-<div class="codehilite"><pre><span></span>    <span class="p">:::</span><span class="n">python</span>
-    <span class="kn">import</span> <span class="nn">misModulos</span> <span class="kn">as</span> <span class="nn">modulos</span>
+<div class="codehilite"><pre><span></span><span class="p">:::</span><span class="n">python</span>
+<span class="kn">import</span> <span class="nn">misModulos</span> <span class="kn">as</span> <span class="nn">modulos</span>
 </pre></div>
 
 <p>La primera línea será eliminada del resultado final.</p>
@@ -886,7 +886,7 @@ def bubble_sort(items):
 </pre></div>
 
 <h2 id="notas">Notas</h2>
-<p>La extensión <a href="https://python-markdown.github.io/extensions/admonition/">Admonition</a> permite insertar párrafos resaltados con notas.</p>
+<p>La extensión <a href="https://python-markdown.github.io/extensions/admonition/">Admonition</a> permite insertar párrafos notas resaltados.</p>
 <p>Para hacer uso de ello, en el archivo <code class="codehilite">mkdocs.yml</code> escribimos:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
@@ -908,7 +908,7 @@ Nulla et euismod nulla. Curabitur feugiat, tortor non
 consequat finibus, justo purus auctor massa, nec semper
 lorem quam in massa.</p>
 </div>
-<p>Por defecto, la línea de título es el tipo de nota, salvo que especifiquemos un texto entre comillas:</p>
+<p>Por defecto, el texto que se muestra en la línea de título es el tipo de nota, salvo que especifiquemos otro texto entre comillas:</p>
 <div class="codehilite"><pre><span></span>!!! note &quot;A tener en cuenta:&quot;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Nulla et euismod nulla. Curabitur feugiat, tortor non
@@ -936,7 +936,7 @@ lorem quam in massa.</p>
 <p>La extensión <em>Admonition</em> contempla varios tipos de notas. El tipo por defecto es <em>note</em>:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>El tipo <em>note</em> puede indicarse también como:</p>
+<p>El tipo <em>note</em> también puede indicarse como:</p>
 <div class="codehilite"><pre><span></span>!!! seealso
 </pre></div>
 
@@ -945,7 +945,7 @@ lorem quam in massa.</p>
 <p>Otros tipos:</p>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
-<p>El tipo <em>abstract</em> puede indicarse también como:</p>
+<p>El tipo <em>abstract</em> también puede indicarse como:</p>
 <div class="codehilite"><pre><span></span>!!! summary
 
 !!! tldr

@@ -706,23 +706,19 @@ opciones:
 <li>
 <p>site_url</p>
 <p>Establece la dirección canónica del sitio web y genera una etiqueta en la sección header. El valor por defecto es <code class="codehilite">null</code>:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;canonical&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.misitio.com/&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;canonical&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.misitio.com/&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </pre></div>
 
-<ul>
+</li>
 <li>
 <p>repo_url</p>
 <p>Muestra en cada página un enlace al repositorio indicado por esta variable (GitHub, Bitbucket, GitLab, &hellip;). El valor por defecto es <code class="codehilite">null</code>:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>    <span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/misitio</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/misitio</span>
 </pre></div>
 
-<ul>
+</li>
 <li>
 <p>repo_name</p>
 <p>Determina el nombre del repositorio. Por defecto, lo intenta obtener a partir de <code class="codehilite">repo_url</code>.</p>
@@ -767,12 +763,10 @@ edit_uri: root/path/docs/
 <li>
 <p>google_analytics</p>
 <p>Configura Google analytics. Por defecto es <code class="codehilite">null</code>. Por ejemplo:</p>
-</li>
-</ul>
-<div class="codehilite"><pre><span></span>    <span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;UA-36723568-3&#39;</span><span class="p p-Indicator">,</span> <span class="s">&#39;mkdocs.org&#39;</span><span class="p p-Indicator">]</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;UA-36723568-3&#39;</span><span class="p p-Indicator">,</span> <span class="s">&#39;mkdocs.org&#39;</span><span class="p p-Indicator">]</span>
 </pre></div>
 
-<ul>
+</li>
 <li>
 <p>remote_branch</p>
 <p>Rama del repositorio cuando queremos subir los documentos a GitHub mediante el comando:</p>
@@ -862,14 +856,12 @@ edit_uri: root/path/docs/
 <li>
 <p>Archivos css</p>
 <p>El parámetro <code class="codehilite">extra_css</code> es una lista de archivos <code class="codehilite"><span class="na">.css</span></code>, ubicados en la carpeta de documentos, que queremos incluir en la compilación. Por defecto es una lista vacía, que en lenguaje Python se representa mediante <code class="codehilite">[]</code>.</p>
-</li>
-</ul>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_css</span><span class="p p-Indicator">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/estilos.css</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/masEstilos.css</span>
 </pre></div>
 
-<ul>
+</li>
 <li>
 <p>Archivos javascript</p>
 <p>El parámetro <code class="codehilite">extra_javascript</code> es una lista de archivos javascript, ubicados en la carpeta de documentos, que queremos incluir en la compilación. Por defecto es una lista vacía <code class="codehilite">[]</code>.</p>
@@ -977,7 +969,7 @@ o <code class="codehilite">fenced_code</code>.</p>
 
 <p>En grandes proyectos podemos mejorar el rendimiento de las búsquedas usando la opción <strong>prebuild_index</strong> del complemento <em>search</em>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
         <span class="l l-Scalar l-Scalar-Plain">prebuild_index</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div>
 
