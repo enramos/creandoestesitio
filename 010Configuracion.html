@@ -1,0 +1,1077 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Una descripción de todo lo necesario para crear estas páginas.">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Configurar el proyecto - Creando este sitio</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="css/estilos.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#configurando-el-proyecto" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="Creando este sitio" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Creando este sitio
+              </span>
+              <span class="md-header-nav__topic">
+                Configurar el proyecto
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Www
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="Creando este sitio" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Índice de capítulos:
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Www
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="001Github.html" title="Github" class="md-nav__link">
+      Github
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="002CrearPaginaWeb.html" title="Creando un sitio web" class="md-nav__link">
+      Creando un sitio web
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="003Portada.html" title="La página de portada" class="md-nav__link">
+      La página de portada
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="004Desktop.html" title="Github Desktop" class="md-nav__link">
+      Github Desktop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="005Edicion.html" title="Editar documentos" class="md-nav__link">
+      Editar documentos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="006Markdown.html" title="Formato markdown" class="md-nav__link">
+      Formato markdown
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="007MkDocs.html" title="Primeros pasos con MkDocs" class="md-nav__link">
+      Primeros pasos con MkDocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="008Distribuir.html" title="Publicando las páginas" class="md-nav__link">
+      Publicando las páginas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="009Extensiones.html" title="Extensiones markdown" class="md-nav__link">
+      Extensiones markdown
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configurar el proyecto
+      </label>
+    
+    <a href="010Configuracion.html" title="Configurar el proyecto" class="md-nav__link md-nav__link--active">
+      Configurar el proyecto
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-archivo-de-configuracion" title="El archivo de configuración" class="md-nav__link">
+    El archivo de configuración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-yaml" title="Formato YAML" class="md-nav__link">
+    Formato YAML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-mkdocs-de-proyecto" title="Parámetros Mkdocs de proyecto" class="md-nav__link">
+    Parámetros Mkdocs de proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-barra-de-navegacion" title="La barra de navegación" class="md-nav__link">
+    La barra de navegación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-del-tema-utilizado" title="Parámetros del tema utilizado" class="md-nav__link">
+    Parámetros del tema utilizado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directorios" title="Directorios" class="md-nav__link">
+    Directorios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" title="Extra" class="md-nav__link">
+    Extra
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-de-visualizacion" title="Parámetros de visualización" class="md-nav__link">
+    Parámetros de visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-extensiones" title="Configurar extensiones" class="md-nav__link">
+    Configurar extensiones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-complementos-plugins" title="Configurar complementos (plugins)" class="md-nav__link">
+    Configurar complementos (plugins)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="011Temas.html" title="Adaptar el tema" class="md-nav__link">
+      Adaptar el tema
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="012Material.html" title="Material for MkDocs" class="md-nav__link">
+      Material for MkDocs
+    </a>
+  </li>
+
+    
+    
+  </ul>
+
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+     <br>Índice de cuadernos:
+     <a href="https://cuadernosdenotas.github.io"> <img src=".img/cuadernos.png"></a>
+  </label>
+
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-archivo-de-configuracion" title="El archivo de configuración" class="md-nav__link">
+    El archivo de configuración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-yaml" title="Formato YAML" class="md-nav__link">
+    Formato YAML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-mkdocs-de-proyecto" title="Parámetros Mkdocs de proyecto" class="md-nav__link">
+    Parámetros Mkdocs de proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-barra-de-navegacion" title="La barra de navegación" class="md-nav__link">
+    La barra de navegación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-del-tema-utilizado" title="Parámetros del tema utilizado" class="md-nav__link">
+    Parámetros del tema utilizado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directorios" title="Directorios" class="md-nav__link">
+    Directorios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" title="Extra" class="md-nav__link">
+    Extra
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-de-visualizacion" title="Parámetros de visualización" class="md-nav__link">
+    Parámetros de visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-extensiones" title="Configurar extensiones" class="md-nav__link">
+    Configurar extensiones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-complementos-plugins" title="Configurar complementos (plugins)" class="md-nav__link">
+    Configurar complementos (plugins)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="configurando-el-proyecto">Configurando el proyecto</h1>
+<p>En este capítulo daremos un repaso al archivo de configuración y sus opciones.</p>
+<h2 id="el-archivo-de-configuracion">El archivo de configuración</h2>
+<p>El proceso de conversión y generación del sitio web se configura en buena parte adaptando las definiciones de parámetros en el archivo <code class="codehilite">mkdocs.yml</code>, que es un fichero de texto en formato <a href="https://es.wikipedia.org/wiki/YAML">YAML</a> ubicado en la carpeta principal.</p>
+<p>Todos los parámetros son opcionales, excepto <code class="codehilite">site_name</code>, que representa el título del proyecto. Por lo tanto, un archivo <code class="codehilite">mkdocs.yml</code> en su expresión mínima puede ser:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+</pre></div>
+
+<h2 id="formato-yaml">Formato YAML</h2>
+<p>Los archivos YAML son ficheros de texto que se utilizan para almacenar datos. <a href="https://www.mkdocs.org/">MkDocs</a> y <a href="https://jekyllrb.com/">Jekyll</a> lo utilizan para crear archivos de configuración con los parámetros del proceso de conversión.</p>
+<p>La sintaxis es sencilla y fue diseñada buscando que fuera muy legible. Se utiliza una sintaxis basada en el sangrado, que debe ser consistente y basado en espacios en blanco, no admitiéndose caracteres de tabulación.</p>
+<p>En principio, un archivo YAML contiene una colección de parejas <em>clave:valor</em>, cada una de ellas en línea aparte. Se admiten líneas en blanco.</p>
+<p>Cada variable puede ser de diferente tipo, que será deducido automáticamente:</p>
+<ul>
+<li>
+<p>un texto. Las comillas son opcionales, y pueden usarse apóstrofos en su lugar:</p>
+<div class="codehilite"><pre><span></span>nombre: &quot;Luis Gutierrez&quot;
+</pre></div>
+
+
+</li>
+<li>
+<p>un número:</p>
+<div class="codehilite"><pre><span></span><span class="n">edad</span><span class="o">:</span> <span class="mi">58</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>un valor <em>booleano</em> cuyo valor puede ser <em>true</em> o <em>false</em></p>
+<div class="codehilite"><pre><span></span><span class="n">activado</span><span class="o">:</span> <span class="kc">true</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>una lista. Los elementos se escriben en líneas aparte, precedidos por un guión</p>
+<div class="codehilite"><pre><span></span>participes:
+    - Luis
+    - Ana
+    - Juan
+</pre></div>
+
+
+</li>
+<li>
+<p>una colección de elementos clave:valor</p>
+<div class="codehilite"><pre><span></span><span class="n">opciones</span><span class="o">:</span>
+    <span class="n">idioma</span><span class="o">:</span> <span class="n">es</span>
+    <span class="n">avisos</span><span class="o">:</span> <span class="kc">true</span>
+</pre></div>
+
+
+</li>
+</ul>
+<p>Los parámetros pueden anidarse. Por ejemplo, podemos tener una lista donde uno o varios de sus elementos sean, a su vez, listas.</p>
+<p>El carácter <code class="codehilite">#</code> delimita lo que será considerado como comentarios e ignorado. Se toma como tal todo el texto desde <code class="codehilite">#</code> hasta el fin de línea</p>
+<div class="codehilite"><pre><span></span>#-------------------------
+# opciones del proceso
+#-------------------------
+
+opciones:
+    idioma: es
+    avisos: true
+</pre></div>
+
+
+<p>Podemos asignar a un parámetro un bloque de texto de varias líneas, si comienza con un carácter <code class="codehilite">&gt;</code>:</p>
+<div class="codehilite"><pre><span></span>descripción: &gt;
+       Texto multilínea
+       que será unido 
+       en una sola línea
+       de texto
+
+       Una línea en blanco
+       permite separar párrafos
+</pre></div>
+
+<p>Aunque podemos preservar los saltos de línea si usamos <code class="codehilite">|</code> en lugar de <code class="codehilite">&gt;</code>:</p>
+<div class="codehilite"><pre><span></span>descripción: |
+       Texto multilínea
+       formado por 
+       cuatro líneas que
+       serán respetadas
+</pre></div>
+
+<h2 id="parametros-mkdocs-de-proyecto">Parámetros Mkdocs de proyecto</h2>
+<ul>
+<li>
+<p>site_url</p>
+<p>Establece la dirección canónica del sitio web y genera una etiqueta en la sección header. El valor por defecto es <code class="codehilite">null</code>:</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;canonical&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.misitio.com/&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</pre></div>
+
+<ul>
+<li>
+<p>repo_url</p>
+<p>Muestra en cada página un enlace al repositorio indicado por esta variable (GitHub, Bitbucket, GitLab, &hellip;). El valor por defecto es <code class="codehilite">null</code>:</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span>    <span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/misitio</span>
+</pre></div>
+
+<ul>
+<li>
+<p>repo_name</p>
+<p>Determina el nombre del repositorio. Por defecto, lo intenta obtener a partir de <code class="codehilite">repo_url</code>.</p>
+</li>
+<li>
+<p>edit_uri</p>
+<p>Tomando <code class="codehilite">repo_url</code> como dirección base del repositorio de documentos, <code class="codehilite">edit_uri</code> se añade para formar la dirección para editar la página. Esto facilita el acceso a la misma. Se admiten caracteres como (&lsquo;?&rsquo;) y (&lsquo;#&rsquo;). </p>
+<p>Valor por defecto: <code class="codehilite">edit/master/docs/</code> para GitHub y GitLab, y <code class="codehilite">src/default/docs/</code> para Bitbucket si <code class="codehilite">repo_url</code> apunta a estos dominios. En caso contrario, el valor por defecto será <code class="codehilite">null</code>. Por ejemplo:</p>
+<div class="codehilite"><pre><span></span>edit_uri: &#39;?query=root/path/docs/&#39;
+
+edit_uri: &#39;#root/path/docs/&#39;
+
+edit_uri: root/path/docs/
+</pre></div>
+
+
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>En algunos repositorios  como GitHub, Bitbucket o GitLab), el valor de <code class="codehilite">edit_uri</code> se deriva de &lsquo;repo_url&rsquo; y no necesita establecerse manualmente.</p>
+<p>Por ejemplo, en GitHub <code class="codehilite">edit_uri</code> será <code class="codehilite">edit/master/docs/</code>. En Bitbucket será <code class="codehilite">src/default/docs/</code>.</p>
+<p>Para usar una URI diferente de la que se calcula por defecto (por ejemplo, otra rama de desarrollo), utilizar <code class="codehilite">edit_uri</code>. Asignarle una cadena vacía si no queremos un enlace &ldquo;edit URL&rdquo; mostrado en la página</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Atención:</p>
+<p>En GitHub y GitLab, el path por defecto (<code class="codehilite">edit/master/docs/</code>) abre el documento en el editor online. Esto requiere que nos hayamos conectado con nuestra cuenta de usuario y contraseña. En caso contrario, seremos redireccionados a una página de conexión. Alternativamente, podemos usar un path &ldquo;blob&rdquo; (<code class="codehilite">blob/master/docs/</code>) para abrir una vista de solo lectura, que admite acceso anónimo.</p>
+</div>
+<ul>
+<li>
+<p>site_description</p>
+<p>Un texto descriptivo que se insertará en la sección <code class="codehilite">&lt;head&gt;</code> como metadato del archivo html. Por defecto es <code class="codehilite">null</code></p>
+</li>
+<li>
+<p>site_author</p>
+<p>El nombre del autor se insertará en la sección <code class="codehilite">&lt;head&gt;</code> como metadato. Por defecto es <code class="codehilite">null</code></p>
+</li>
+<li>
+<p>copyright</p>
+<p>Información de copyright a incluir en las páginas si el tema lo tiene contemplado. Por defecto es <code class="codehilite">null</code></p>
+</li>
+<li>
+<p>google_analytics</p>
+<p>Configura Google analytics. Por defecto es <code class="codehilite">null</code>. Por ejemplo:</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span>    <span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;UA-36723568-3&#39;</span><span class="p p-Indicator">,</span> <span class="s">&#39;mkdocs.org&#39;</span><span class="p p-Indicator">]</span>
+</pre></div>
+
+<ul>
+<li>
+<p>remote_branch</p>
+<p>Rama del repositorio cuando queremos subir los documentos a GitHub mediante el comando:</p>
+<div class="codehilite"><pre><span></span>mkdocs gh-deploy
+</pre></div>
+
+
+<p>Este comando es una alternativa de <code class="codehilite">mkdocs build</code>, y además de generar el sitio web, automatiza la subida al repositorio. También podemos establecer la rama como parámetro en la línea de comandos. Por defecto es <code class="codehilite">gh-pages</code></p>
+</li>
+<li>
+<p>remote_name</p>
+<p>Nombre remoto donde subir los contenidos usando <code class="codehilite">gh-deploy</code>. Podemos establecerlo en la línea de comandos. Por defecto es <code class="codehilite">origin</code>.</p>
+</li>
+</ul>
+<h2 id="la-barra-de-navegacion">La barra de navegación</h2>
+<p>El apartado <code class="codehilite">nav</code> se usa para determinar el formato de la navegación. Veamos, por ejemplo, una barra con tres entradas:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&#39;Introducción&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;index.md&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&#39;Guía</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">usuario&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;user-guide.md&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&#39;Acerca</span><span class="nv"> </span><span class="s">de&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;about.md&#39;</span>
+</pre></div>
+
+<p>Todos los paths deben ser relativos a la carpeta donde se ubica el archivo <code class="codehilite">mkdocs.yml</code>.</p>
+<p>Los elementos pueden incluir enlaces a sitios externos. En este caso, los títulos, que son opcionales para enlaces internos, son obligatorios para los externos.</p>
+<p>Un sitio externo puede ser una URL absoluta o relativa. Cualquier path no encontrado durante la conversión será asumido como enlace externo.</p>
+<p>Un ejemplo:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Home</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Guía de usuario</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Referencia</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/</span>
+</pre></div>
+
+<p>A veces un proyecto está alojado en un subdirectorio y queremos enlazar a otro. Podemos usar paths relativos:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/foo/</span>
+
+<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Home</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">../</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Guía de usuario</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Referencia</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/ref/</span>
+</pre></div>
+
+<p>Véase que <code class="codehilite">site_url</code> indica que el proyecto está en la carpeta <code class="codehilite">/foo/</code> dentro del dominio. Por lo tanto, <code class="codehilite">Home</code> tiene un enlace relativo que apunta a <code class="codehilite">https://ejemplo.com/</code>. La tercera entrada usa un path absoluto apuntando a <code class="codehilite">https://ejemplo.com/ref/</code>.</p>
+<p>Por defecto, si no especificamos <code class="codehilite">nav</code>, esta contendrá una lista de todos los documentos <em>markdown</em> apuntados por <code class="codehilite">docs_dir</code>, incluyendo subdirectorios, y ordenando las páginas alfabéticamente.</p>
+<h2 id="parametros-del-tema-utilizado">Parámetros del tema utilizado</h2>
+<p>La opción <code class="codehilite">theme</code> establece el tema a utilizar. Puede ser el nombre del tema o bien una lista de parámetros. En el primer caso:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+</pre></div>
+
+<p>Este es el valor por defecto.</p>
+<p>Un ejemplo del segundo caso:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">miTema/</span>
+    <span class="l l-Scalar l-Scalar-Plain">static_templates</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mapa.html</span>
+    <span class="l l-Scalar l-Scalar-Plain">include_sidebar</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div>
+
+<p>Los parámetros de un tema pueden ser:</p>
+<ul>
+<li>
+<p>name:</p>
+<p>Nombre del tema. Para los temas <em>built-in</em> puede ser <code class="codehilite">mkdocs</code> o <code class="codehilite">readthedocs</code>. Para temas de terceros, véase la documentación de los mismos.</p>
+</li>
+<li>
+<p>custom_dir:</p>
+<p>Si queremos adaptar el tema a nuestro gusto, debemos reescribir algunos ficheros y dejarlos en la carpeta apuntada por <code class="codehilite">custom-dir</code>. Puede escribirse relativa a la carpeta principal (la que tiene el archivo de configuración) o bien con una referencia absolut.</p>
+</li>
+<li>
+<p>static_templates:</p>
+<p>Una lista de plantillas, bien en la carpeta de plantillas del tema, o en la carpeta apuntada por <code class="codehilite">custom_dir</code>.</p>
+</li>
+<li>
+<p>otros parámetros propios del tema utilizado.</p>
+</li>
+</ul>
+<h2 id="directorios">Directorios</h2>
+<p>Además de la carpeta apuntada por <code class="codehilite">custom-dir</code>, con las plantillas del tema original adaptadas a nuestro gusto, tenemos otras carpetas que se pueden configurar:</p>
+<ul>
+<li>
+<p>Carpeta de documentos</p>
+<p>Por defecto los documentos se guardan en la carpeta <code class="codehilite">docs</code>. Podemos establecer otra mediante el parámetro <code class="codehilite">docs_dir</code>.</p>
+</li>
+<li>
+<p>Carpeta del sitio web. Cuando compilemos el proyecto, se generará una carpeta <code class="codehilite">site</code>con los resultados. Podemos establecer otra carpeta mediante la opción <code class="codehilite">site_dir</code>.</p>
+</li>
+<li>
+<p>Archivos css</p>
+<p>El parámetro <code class="codehilite">extra_css</code> es una lista de archivos <code class="codehilite"><span class="na">.css</span></code>, ubicados en la carpeta de documentos, que queremos incluir en la compilación. Por defecto es una lista vacía, que en lenguaje Python se representa mediante <code class="codehilite">[]</code>.</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_css</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/estilos.css</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/masEstilos.css</span>
+</pre></div>
+
+<ul>
+<li>
+<p>Archivos javascript</p>
+<p>El parámetro <code class="codehilite">extra_javascript</code> es una lista de archivos javascript, ubicados en la carpeta de documentos, que queremos incluir en la compilación. Por defecto es una lista vacía <code class="codehilite">[]</code>.</p>
+</li>
+<li>
+<p>Plantillas extra</p>
+<p>El parámetro <code class="codehilite">extra_templates</code> contiene una lista de plantillas ubicadas en nuestra carpeta de documentos. Por defecto es una lista vacía.</p>
+</li>
+</ul>
+<h2 id="extra">Extra</h2>
+<p>Este apartado es una lista de parámetros que podemos añadir a nuestro gusto cuando diseñemos temas. Por ejemplo, si queremos crear una variable <code class="codehilite">version</code> para mostrarla en las páginas:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+</pre></div>
+
+<p>Por defecto, <code class="codehilite">extra</code> es un conjunto vacío de claves.</p>
+<h2 id="parametros-de-visualizacion">Parámetros de visualización</h2>
+<ul>
+<li>
+<p><code class="codehilite">use_directory_urls</code></p>
+<p>Valores: <code class="codehilite">true</code>o <code class="codehilite">false</code>. Controla el estilo utilizado para generar enlaces a páginas. Valor por defecto: <code class="codehilite">true</code>.</p>
+<p>El proceso de generación de páginas web convierte los enlaces <em>markdown</em> en enlaces <em>html</em>. Cuando el valor de este parámetro sea <em>true</em>, para cada página se creará un directorio y la página se llamará <em>index.html</em>. Los enlaces apuntarán a la carpeta, y no al archivo <em>index</em>.</p>
+<p>Cuando el valor sea <em>false</em>, las páginas generadas se llamarán igual que los archivos <em>markdown</em> (cambiando la extensión), y los enlaces apuntarán directamente a los archivos.</p>
+<p>Si queremos que los enlaces sean completos, con el nombre de la página enlazada, poner este parámetro como <em>false</em>. Resulta útil cuando queramos visualizar las páginas en nuestro entorno local, o en una plataforma que no redireccione automáticamente a <em>index.html</em> (<a href="https://github.com">GitHub</a> si lo hace).</p>
+<p>Algunos ejemplos:</p>
+<table>
+<thead>
+<tr>
+<th>Archivo a enlazar</th>
+<th>valor: true</th>
+<th>valor: false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index.md</td>
+<td>/index.html</td>
+<td>/index.html</td>
+</tr>
+<tr>
+<td>guia_de_uso.md</td>
+<td>/guia_de_uso/index.html</td>
+<td>/guia_de_uso.html</td>
+</tr>
+<tr>
+<td>acercade/licencia.md</td>
+<td>/acercade/licencia/index.html</td>
+<td>/acercade/licencia.html</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code class="codehilite">strict</code></p>
+<p>Determina el comportamiento del proceso de conversión tras producirse un aviso (<em>warning</em>). Por defecto es <em>false</em>. Hay que ponerlo como <code class="codehilite">true</code> para detener el proceso cuando se produce cualquier aviso.</p>
+</li>
+<li>
+<p><code class="codehilite">dev_addr</code></p>
+<p>URL para <code class="codehilite">mkdocs serve</code>. Por defecto es <code class="codehilite">&#39;127.0.0.1:8000&#39;</code>. Debe escribirse en formato <code class="codehilite"><span class="n">IP</span><span class="o">:</span><span class="n">PUERTO</span></code>.</p>
+<p>También se puede establecer con el argumento <code class="codehilite">--dev-addr</code> al invocar <code class="codehilite">mkdocs serve</code>.</p>
+</li>
+</ul>
+<h2 id="configurar-extensiones">Configurar extensiones</h2>
+<p>MkDocs es un programa Python que traduce de <em>markdown</em> a HTML utilizando las funcionalidades proporcionadas por la biblioteca <a href="https://python-markdown.github.io/">Python Markdown</a>, que a su vez admite una gran variedad de <a href="https://python-markdown.github.io/extensions/">extensiones</a> para ampliar los recursos de sintaxis, como <code class="codehilite">meta</code>, <code class="codehilite">toc</code>, <code class="codehilite">tables</code>,
+o <code class="codehilite">fenced_code</code>.</p>
+<p>Por ejemplo, para utilizar <a href="https://python-markdown.github.io/extensions/smarty/">SmartyPants</a>, escribiremos:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">smarty</span>
+</pre></div>
+
+<p>Algunas extensiones tiene  opciones de configuración. Para asignarles un valor, añadir para cada una un mapa de elementos <em>clave:valor</em>.</p>
+<p>Por ejemplo, la extensión <code class="codehilite">toc</code> permite usar <em>permalinks</em>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+</pre></div>
+
+<p>Véase que tras la extensión se ponen dos puntos y a continuación la lista de opciones:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="l l-Scalar l-Scalar-Plain">separator</span><span class="p p-Indicator">:</span> <span class="s">&quot;_&quot;</span>
+</pre></div>
+
+<p>Si la extensión utilizada no requiere opciones, basta con incluirla en la lista de extensiones:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">smarty</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
+        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sane_lists</span>
+</pre></div>
+
+<h2 id="configurar-complementos-plugins">Configurar complementos (plugins)</h2>
+<p>Podemos aumentar las funcionalidades de <em>MkDocs</em> instalando complementos con el comando <em>pip</em>. De serie, <em>MkDocs</em> proporciona el complemento <em>Search</em> para realizar búsquedas, que es el único que se activa automáticamente.</p>
+<p>Para activar otros complementos, hay que especificar la lista en el archivo de configuración:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">otros_complementos</span>
+</pre></div>
+
+<p>Para desactivar <em>search</em>, escribir una lista <code class="codehilite">plugins</code> que no incluya este complemento. El efecto será que desaparecerá el recuadro de búsqueda de la barra superior.</p>
+<p>Para asignar una lista vacía al parámetro <code class="codehilite">plugins</code>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+</pre></div>
+
+<p>En grandes proyectos podemos mejorar el rendimiento de las búsquedas usando la opción <strong>prebuild_index</strong> del complemento <em>search</em>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
+        <span class="l l-Scalar l-Scalar-Plain">prebuild_index</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+
+<p>Por defecto es <em>false</em>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="009Extensiones.html" title="Extensiones markdown" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Extensiones markdown
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="011Temas.html" title="Adaptar el tema" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Adaptar el tema
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; El taller de jf. Creado con
+            <a href="https://www.mkdocs.org">MkDocs</a>
+            y <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>. Última actualización: 18-11-2018
+        </div>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1026 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Una descripción de todo lo necesario para crear estas páginas.">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Primeros pasos con MkDocs - Creando este sitio</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="css/estilos.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#usando-mkdocs-para-generar-paginas-web" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="Creando este sitio" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Creando este sitio
+              </span>
+              <span class="md-header-nav__topic">
+                Primeros pasos con MkDocs
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Www
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="Creando este sitio" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Índice de capítulos:
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://www.github.com/cuadernosdenotas/creandoestesitio" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Www
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="001Github.html" title="Github" class="md-nav__link">
+      Github
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="002CrearPaginaWeb.html" title="Creando un sitio web" class="md-nav__link">
+      Creando un sitio web
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="003Portada.html" title="La página de portada" class="md-nav__link">
+      La página de portada
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="004Desktop.html" title="Github Desktop" class="md-nav__link">
+      Github Desktop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="005Edicion.html" title="Editar documentos" class="md-nav__link">
+      Editar documentos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="006Markdown.html" title="Formato markdown" class="md-nav__link">
+      Formato markdown
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Primeros pasos con MkDocs
+      </label>
+    
+    <a href="007MkDocs.html" title="Primeros pasos con MkDocs" class="md-nav__link md-nav__link--active">
+      Primeros pasos con MkDocs
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-mkdocs" title="Introducción a MkDocs" class="md-nav__link">
+    Introducción a MkDocs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-python" title="Instalando Python" class="md-nav__link">
+    Instalando Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalar-pip" title="Instalar pip" class="md-nav__link">
+    Instalar pip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalar-mkdocs" title="Instalar MkDocs" class="md-nav__link">
+    Instalar MkDocs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primer-proyecto" title="Primer proyecto" class="md-nav__link">
+    Primer proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generar-el-sitio-web" title="Generar el sitio web" class="md-nav__link">
+    Generar el sitio web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizando-el-resultado-durante-la-edicion" title="Visualizando el resultado durante la edición" class="md-nav__link">
+    Visualizando el resultado durante la edición
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-mas-paginas" title="Añadir más páginas" class="md-nav__link">
+    Añadir más páginas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagina-principal" title="Página principal" class="md-nav__link">
+    Página principal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escogiendo-un-tema" title="Escogiendo un tema" class="md-nav__link">
+    Escogiendo un tema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-favicon" title="El Favicon" class="md-nav__link">
+    El Favicon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-ayuda-de-mkdocs" title="La ayuda de MkDocs" class="md-nav__link">
+    La ayuda de MkDocs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="008Distribuir.html" title="Publicando las páginas" class="md-nav__link">
+      Publicando las páginas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="009Extensiones.html" title="Extensiones markdown" class="md-nav__link">
+      Extensiones markdown
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="010Configuracion.html" title="Configurar el proyecto" class="md-nav__link">
+      Configurar el proyecto
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="011Temas.html" title="Adaptar el tema" class="md-nav__link">
+      Adaptar el tema
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="012Material.html" title="Material for MkDocs" class="md-nav__link">
+      Material for MkDocs
+    </a>
+  </li>
+
+    
+    
+  </ul>
+
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+     <br>Índice de cuadernos:
+     <a href="https://cuadernosdenotas.github.io"> <img src=".img/cuadernos.png"></a>
+  </label>
+
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-mkdocs" title="Introducción a MkDocs" class="md-nav__link">
+    Introducción a MkDocs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-python" title="Instalando Python" class="md-nav__link">
+    Instalando Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalar-pip" title="Instalar pip" class="md-nav__link">
+    Instalar pip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalar-mkdocs" title="Instalar MkDocs" class="md-nav__link">
+    Instalar MkDocs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primer-proyecto" title="Primer proyecto" class="md-nav__link">
+    Primer proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generar-el-sitio-web" title="Generar el sitio web" class="md-nav__link">
+    Generar el sitio web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizando-el-resultado-durante-la-edicion" title="Visualizando el resultado durante la edición" class="md-nav__link">
+    Visualizando el resultado durante la edición
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-mas-paginas" title="Añadir más páginas" class="md-nav__link">
+    Añadir más páginas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagina-principal" title="Página principal" class="md-nav__link">
+    Página principal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escogiendo-un-tema" title="Escogiendo un tema" class="md-nav__link">
+    Escogiendo un tema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-favicon" title="El Favicon" class="md-nav__link">
+    El Favicon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-ayuda-de-mkdocs" title="La ayuda de MkDocs" class="md-nav__link">
+    La ayuda de MkDocs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="usando-mkdocs-para-generar-paginas-web">Usando MkDocs para generar páginas web</h1>
+<p>En este capítulo veremos como utilizar <a href="https://www.mkdocs.org">MkDocs</a>, un software alternativo a <a href="https://jekyllrb.com/">Jekyll</a> que destaca por su orientación a la creación de manuales técnicos.</p>
+<h2 id="introduccion-a-mkdocs">Introducción a MkDocs</h2>
+<p>Una vez instalado el editor de textos en nuestro equipo, y redactados los primeros documentos en formato markdown, el siguiente paso sería subirlos a <a href="https://github.com/">GitHub</a> para que este genere el sitio web usando el conversor <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+<p>Tenemos otra opción. Para experimentar y hacer pruebas, quizás lo mejor sea instalar <a href="https://jekyllrb.com/">Jekyll</a> en nuestro ordenador. Una vez que estemos a gusto con el resultado, tendremos dos opciones: subir los archivos <em>markdown</em> originales y repetir el proceso de conversión con la ayuda de <a href="https://github.com/">Github</a>, o bien subir directamente los ficheros <em>html</em> creados en nuestra máquina con <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+<p>El uso de un software conversor en el entorno local proporciona otras ventajas. Podremos hacer todas las pruebas que queramos sin necesidad de estar conectados a la red ni depender de tiempos de respuesta. Además, tendremos la libertad de cambiar de plataforma si algún día queremos migrar de <a href="https://github.com/">GitHub</a> a otro servicio. Bastará con mover los archivos html de un servidor a otro.</p>
+<p>Otra ventaja es que, aunque <a href="https://jekyllrb.com/">Jekyll</a> es seguramente el generador más popular por su potencia y versatilidad, no debemos olvidar que no es el único software existente para este propósito. Véase una lista de alternativas en <a href="https://www.staticgen.com/">esta página</a>, y otra lista más completa <a href="https://staticsitegenerators.net/">aquí</a>. Para crear manuales técnicos prefiero utilizar <a href="https://www.mkdocs.org">MkDocs</a>, que me gusta por su sencillez y por estar muy orientado a la creación de documentación. <a href="https://jekyllrb.com/">Jekyll</a> solo lo estoy usando para crear la página de portada.</p>
+<p><a href="https://www.mkdocs.org">MkDocs</a> es un proyecto de software libre cuyo repositorio en <a href="https://github.com/">GitHub</a> es <a href="https://github.com/mkdocs/mkdocs/">este</a>. Las instrucciones de uso están <a href="https://www.mkdocs.org">aquí</a>.</p>
+<h2 id="instalacion">Instalación</h2>
+<p>La instalación de <a href="https://www.mkdocs.org">MkDocs</a> en nuestro entorno local puede resultar un poco complicada para usuarios poco técnicos, así que vayamos por partes. Tenemos que instalar en nuestro ordenador tres piezas de software:</p>
+<ul>
+<li>python</li>
+<li>pip</li>
+<li>mkdocs</li>
+</ul>
+<p>De todas formas, <em>pip</em> suele venir incluido de serie en las últimas versiones de <em>python</em>.</p>
+<h3 id="instalando-python">Instalando Python</h3>
+<p>MkDocs es un programa desarrollado en lenguaje de programación <a href="https://www.python.org/">Python</a>. Este tipo de software solo se puede ejecutar en nuestro ordenador si tenemos instalada la plataforma <a href="https://www.python.org/">Python</a>, que suele venir incluida de serie en sistemas Mac y Linux, y se distribuye en dos versiones, Python 2 y Python 3. Cualquiera de las dos nos sirve.</p>
+<p>Podemos comprobar si tenemos <a href="https://www.python.org/">Python</a> en nuestro ordenador abriendo una ventana de terminal de comandos del sistema operativo y ejecutando lo siguiente:</p>
+<div class="codehilite"><pre><span></span>python --version
+</pre></div>
+
+<p>Si obtenemos un mensaje de error, significa que hay que instalarlo. En caso contrario, hay que tener en cuenta que MkDocs requiere como mínimo la versión 2.7, por lo que si tenemos una anterior, habrá que actualizarla.</p>
+<p>Para comprobar que tenemos la versión 3, hay que ejecutar el comando:</p>
+<div class="codehilite"><pre><span></span>python3 --version
+</pre></div>
+
+<p>MkDocs requiere alguna versión a partir de la 3.4.</p>
+<p>Si no tenemos <a href="https://www.python.org/">Python</a>, o queremos actualizarnos a una versión más reciente, podemos descargarlo desde su <a href="https://www.python.org/">página web</a> y ejecutar el programa instalador así obtenido. </p>
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>En Windows, debemos asegurarnos de añadir la carpeta de Python a la variable PATH del sistema. El proceso de instalación suele incluir una opción que debemos marcar para hacer esto automáticamente.</p>
+</div>
+<h3 id="instalar-pip">Instalar pip</h3>
+<p><em>MkDocs</em> se puede descargar e instalar desde el <a href="https://pypi.org">repositorio oficial</a> de programas Python. En las versiones más recientes de Python, contamos con un programa especial llamado <em>pip</em> que sirve para automatizar la tarea de instalar software desde ese repositorio.</p>
+<p>Podemos comprobar si tenemos <em>pip</em> con el comando:</p>
+<div class="codehilite"><pre><span></span>pip --version
+</pre></div>
+
+<p>Este software se utiliza para instalar programas <em>Python</em> con el comando:</p>
+<div class="codehilite"><pre><span></span>pip install nombre_de_programa
+</pre></div>
+
+<p>Para actualizar <em>pip</em> a una versión más reciente se usa el comando:</p>
+<div class="codehilite"><pre><span></span>pip install –-upgrade pip
+</pre></div>
+
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El uso del comando <em>pip</em> requiere que nuestra cuenta de usuario tenga permisos para administrar el sistema. En sistemas Mac y Linux, debemos ejecutarlo como administrador:</p>
+<div class="codehilite"><pre><span></span>sudo pip install nombre_programa
+</pre></div>
+
+
+<p>Una alternativa a esto consiste en ejecutar <em>pip</em> añadiendo el argumento <code class="codehilite">user</code>, lo que hace que el software que estamos instalando solo funcione en nuestra cuenta de usuario:</p>
+<div class="codehilite"><pre><span></span>pip install --user nombre_programa
+</pre></div>
+
+
+</div>
+<h3 id="instalar-mkdocs">Instalar MkDocs</h3>
+<p>Una vez que tenemos <em>python</em> y el instalador de paquetes de software <em>pip</em>, para instalar <a href="https://www.mkdocs.org">MkDocs</a> tenemos que ejecutamos el comando:</p>
+<div class="codehilite"><pre><span></span>pip install mkdocs
+</pre></div>
+
+<p>Una vez hecho, comprobamos la versión instalada con el comando:</p>
+<div class="codehilite"><pre><span></span>mkdocs --version
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Tanto <em>pip</em> como <em>MkDocs</em> se instalan en la carpeta de módulos de Python. Si en el path de nuestro sistema no se incluye la forma de acceder a esa carpeta, otra forma de ejecutar cualquier módulo es invocando <em>python</em> pasándole como argumento el módulo a ejecutar:</p>
+<div class="codehilite"><pre><span></span>python -m mkdocs
+</pre></div>
+
+
+<p>El parámetro <code class="codehilite">-m</code> indica que lo que viene a continuación es un programa <em>python</em> ubicado en la carpeta de módulos.</p>
+<p>Por ejemplo, para preguntar por la versión de <em>mkdocs</em>, el comando sería</p>
+<div class="codehilite"><pre><span></span>python -m mkdocs --version
+</pre></div>
+
+
+<p>Y con <em>Python 3</em>:</p>
+<div class="codehilite"><pre><span></span>python3 -m mkdocs --version
+</pre></div>
+
+
+</div>
+<h2 id="primer-proyecto">Primer proyecto</h2>
+<p>Una vez instalado <em>MkDocs</em>, podemos iniciar un proyecto desde el terminal de comandos del sistema operativo. Comenzamos por situarnos en la carpeta donde guardamos nuestros proyectos:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> documentos/proyectos
+</pre></div>
+
+<p>Y ejecutamos el comando:</p>
+<div class="codehilite"><pre><span></span>mkdocs new nombre
+</pre></div>
+
+<p>siendo &ldquo;<em>nombre</em>&rdquo; el que queremos dar al proyecto. Dentro de la carpeta actual se creará una subcarpeta con ese nombre para alojar los archivos.</p>
+<p>Esa carpeta no ha nacido vacía. Se ha añadido de forma automática:</p>
+<ul>
+<li>
+<p>Un archivo de texto con la configuración del proyecto. Se llama <code class="codehilite">mkdocs.yml</code> y consiste en una lista de variables de configuración, cada una de ellas en formato <em>parámetro:valor</em>. Para empezar, solo tiene una línea de texto con el título del proyecto, que podemos adaptar a nuestro gusto:</p>
+<div class="codehilite"><pre><span></span><span class="n">site_name</span><span class="o">:</span> <span class="n">Mi</span> <span class="n">nuevo</span> <span class="n">proyecto</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Una subcarpeta <code class="codehilite">docs</code> destinada a ubicar los archivos <code class="codehilite">markdown</code>. Inicialmente hay un único fichero llamado <code class="codehilite">index.md</code> que actuará como página principal. Contiene el siguiente texto &ldquo;de pruebas&rdquo;:</p>
+<div class="codehilite"><pre><span></span># Welcome to MkDocs
+
+For full documentation visit [mkdocs.org](https://mkdocs.org).
+
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs help` - Print this help message.
+
+## Project layout
+
+mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</pre></div>
+
+
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Véase que tanto <em>Jekyll</em> como <em>MkDocs</em> utilizan un archivo en formato YML para recoger los parámetros del proceso de conversión. <em>Jekyll</em> usa el archivo <code class="codehilite">_config.yml</code>, y en <em>MkDocs</em> el nombre es <code class="codehilite">mkdocs.yml</code>. Los archivos YML son ficheros de texto para representar datos.</p>
+</div>
+<h2 id="generar-el-sitio-web">Generar el sitio web</h2>
+<p>Para generar las páginas web a partir de los documentos <em>markdown</em>, acudimos a la consola del sistema operativo, nos situamos en la misma carpeta que el archivo <code class="codehilite">mkdocs.yml</code> y ejecutamos el comando</p>
+<div class="codehilite"><pre><span></span>mkdocs build
+</pre></div>
+
+<p>Esto crea una carpeta llamada <code class="codehilite">site</code>, cuyo contenido son las páginas de nuestro sitio web, y que subiremos al repositorio de <code class="codehilite">GitHub</code>. Cada vez que ejecutemos el comando <code class="codehilite">mkdocs build</code> estaremos reconstruyendo el contenido de esa carpeta <code class="codehilite">site</code>. A veces sucede que eliminamos archivos que en la versión HTML no se suprimen de forma automática. Para hacer limpieza debemos ejecutar el comando <code class="codehilite">build</code> añadiendo el parámetro <code class="codehilite">--clean</code>:</p>
+<div class="codehilite"><pre><span></span>mkdocs build --clean
+</pre></div>
+
+<h2 id="visualizando-el-resultado-durante-la-edicion">Visualizando el resultado durante la edición</h2>
+<p>MkDocs es capaz de generar páginas html &ldquo;al vuelo&rdquo; sin llegar a crear la carpeta <code class="codehilite">site</code>, permitiéndonos visualizarlas en nuestro navegador web para comprobar el aspecto final de lo que estamos escribiendo en el editor de texto.</p>
+<p>Para ello, en el terminal de comandos del sistema nos situamos en la misma carpeta que el archivo de configuración <code class="codehilite">mkdocs.yml</code>, e introducimos el comando:</p>
+<div class="codehilite"><pre><span></span>mkdocs serve
+</pre></div>
+
+<p>Se generará un sitio web temporal, y <em>mkdocs</em> quedará &ldquo;a la escucha&rdquo;. Cada vez que modifiquemos un archivo y lo guardemos, se refrescan los resultados. Esto se mantiene en funcionamiento hasta que pulsemos <code class="codehilite">[Ctrl-C]</code> sobre la consola:</p>
+<div class="codehilite"><pre><span></span>INFO    -  Building documentation... 
+INFO    -  Cleaning site directory 
+<span class="o">[</span>I <span class="m">181010</span> <span class="m">16</span>:48:41 server:292<span class="o">]</span> Serving on http://127.0.0.1:8000
+<span class="o">[</span>I <span class="m">181010</span> <span class="m">16</span>:48:41 handlers:59<span class="o">]</span> Start watching changes
+<span class="o">[</span>I <span class="m">181010</span> <span class="m">16</span>:48:41 handlers:61<span class="o">]</span> Start detecting changes
+</pre></div>
+
+<p>Para ver los resultados de esa compilación al vuelo, tenemos que abrir el navegador web e introducir la URL <code class="codehilite">http://127.0.0.1:8000</code>.</p>
+<p><img alt="Nuevo proyecto" src="img/MkDocs001.png" /></p>
+<p>Cada vez que se modifique cualquier archivo, se guarden los cambios, y MkDocs refresque los resultados, la ventana del navegador se actualizará automáticamente. </p>
+<div class="admonition note">
+<p class="admonition-title">Truco:</p>
+<p>Arrastrando esa URL a la carpeta del proyecto, tendremos un enlace permanente en el que podemos pulsar para previsualizar la página de forma cómoda. Solo funciona mientras <code class="codehilite">mkdocs serve</code> se está ejecutando.</p>
+<p>También podemos crear un script (en windows, un archivo batch) que contenga el comando <code class="codehilite">mkdocs serve</code>, y sobre el que podemos pulsar para que se ejecute sin necesidad de abrir manualmente una sesión de terminal:</p>
+<div class="codehilite"><pre><span></span>cd miproyecto
+mkdocs serve
+</pre></div>
+
+
+<p>En Linux y Mac no olvidar proporcionar permisos de ejecución a ese archivo. Por ejemplo, si se llama <em><code class="codehilite">prueba</code></em>, lo hacemos con el comando:</p>
+<div class="codehilite"><pre><span></span>chmod +x prueba
+</pre></div>
+
+
+</div>
+<h2 id="anadir-mas-paginas">Añadir más páginas</h2>
+<p>Nuestro primer intento solo tiene una página que el generador convertirá en <code class="codehilite">index.html</code>. Para añadir más páginas a nuestro sitio web, basta con crear nuevos archivos <em>markdown</em> en la carpeta <code class="codehilite">docs</code>.</p>
+<p>Los archivos <em>markdown</em> han de ser ficheros de texto con la extensión <code class="codehilite">markdown</code>, <code class="codehilite">mdown</code>, <code class="codehilite">mkdn</code>, <code class="codehilite">mkd</code> o <code class="codehilite">md</code>. <em>MkDocs</em> reconocerá cualquiera de ellas. </p>
+<p>En principio, la estructura de carpetas podría ser algo así como:</p>
+<div class="codehilite"><pre><span></span>mkdocs.yml
+docs/index.md
+docs/capitulo1.md
+docs/capitulo2.md
+site/
+</pre></div>
+
+<p>todo ello ubicado en la carpeta principal del proyecto. Podemos crear más niveles de subcarpetas para organizar los documentos <em>markdown</em>:</p>
+<div class="codehilite"><pre><span></span>mkdocs.yml
+docs/index.md
+docs/capitulos/capitulo1.md
+docs/capitulos/capitulo2.md
+docs/anexos/anexo1.md
+site/
+</pre></div>
+
+<p>MkDocs convertirá todos los archivos markdown que encuentre en la carpeta <em>docs</em>, pero para añadirlos a la barra de navegación de nuestra futura página web, debemos crear una lista <code class="codehilite">nav</code> en el archivo de configuración <code class="codehilite">mkdocs.yml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 1</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 2</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Cuando definimos parámetros en un archivo YML, cada uno ocupa una línea de texto. El valor asignado a cada parámetro, tras los dos puntos, puede ser un texto, un número, una fecha, o cualquier otro objeto. Si el valor es una lista, a la derecha de los dos puntos no se pone nada y los elementos de la lista se ponen a partir de la línea siguiente, sangrados y precedidos cada uno de ellos por un guión.</p>
+<p>YML es un formato basado en el uso de sangrado para delimitar cada elemento. Dicho sangrado ha de ser el mismo para los elementos situados al mismo nivel. Se deben utilizar espacios en blanco, no permitiéndose los tabuladores.</p>
+</div>
+<p>La ubicación y nombre de archivos se escribe con referencia a la carpeta <code class="codehilite">docs</code>. Por ejemplo, <code class="codehilite">index.md</code> se refiere a <code class="codehilite">miproyecto/docs/index.md</code>.</p>
+<p>El texto indicado a la izquierda de los dos puntos <code class="codehilite">:</code> se mostrará en la barra de navegación. A la derecha de los dos puntos se indica el archivo a asociar a esa entrada.</p>
+<p>Podemos crear un segundo nivel desplegable de navegación creando subsecciones en la lista <code class="codehilite">nav</code>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulos</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 1</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 2</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
+</pre></div>
+
+<p>Nótese que los nombre de subsecciones no deben llevar archivo alguno asociado tras los dos puntos <code class="codehilite">:</code>.</p>
+<p>Los archivos <em>markdown</em> no incluidos en la lista <code class="codehilite">nav</code> se convertirán a HTML igualmente, pero no se mostrarán en la barra de navegación. La única forma de visualizarlos es insertar un enlace en otro documento.</p>
+<p>La estructura y orden de los documentos en la barra de navegación es independiente de la estructura de carpetas. Si no especificamos una opción <code class="codehilite">nav</code> en el archivo de configuración, MkDocs incluirá en la barra todos los archivos <em>markdown</em> encontrados, ordenados alfabéticamente.</p>
+<h2 id="pagina-principal">Página principal</h2>
+<p>En muchos sitios web es tradición que la página principal se llame <code class="codehilite">index.html</code>. MkDocs buscará un archivo que se llame <code class="codehilite">index.md</code>, o en su defecto, <code class="codehilite">readme.md</code>, convirtiendo cualquiera de los dos en <code class="codehilite">index.html</code>. Si existieran ambos archivos <em>markdown</em>, se ignorará <code class="codehilite">readme.md</code>.</p>
+<h2 id="escogiendo-un-tema">Escogiendo un tema</h2>
+<p>La disposición del contenido de la página resultante, su aspecto final, tipo de letra, colores, etc, se corresponde con el &ldquo;tema&rdquo; seleccionado, que por defecto es &ldquo;mkdocs&rdquo;. Opcionalmente, podemos declararlo explícitamente en el archivo de configuración con el parámetro <code class="codehilite">theme</code>:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opciones.md</span>
+<span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+</pre></div>
+
+<p>Ya vimos en el caso de <em>Jekyll</em> que un tema es una colección de plantillas y archivos. En el caso de MkDocs, podemos examinar la lista de ficheros que componen este tema acudiendo a su <a href="https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes/mkdocs">repositorio</a>. Como sucede con <em>Jekyll</em>, <em>MkDocs</em> tomará estos archivos y los unirá a nuestros documentos para generar las páginas web.</p>
+<p>MkDocs proporciona dos temas internos (<em>built-in</em>) y la posibilidad de utilizar los creados por otras personas. Todos ellos pueden ser copiados a nuestro proyecto y adaptados a nuestro gusto. También podemos crear nuestro propio tema.</p>
+<p>El otro tema proporcionado por MkDocs está inspirado en el que se usa por defecto en <em>Read the docs</em>. Podemos utilizarlo escribiendo lo siguiente en el archivo de configuración:</p>
+<div class="codehilite"><pre><span></span><span class="n">theme</span><span class="o">:</span> <span class="n">readthedocs</span>
+</pre></div>
+
+<p>Su aspecto es el siguiente:</p>
+<p><img alt="Screenshot" src="img/readthedocs.png" /></p>
+<p>Más adelante veremos como aplicar otros temas desarrollados por la comunidad.</p>
+<h2 id="el-favicon">El Favicon</h2>
+<p>Algunos navegadores muestran un pequeño icono para identificar la página. Por ejemplo, en la pestaña superior:</p>
+<p><img alt="Screenshot" src="img/favicon.png" /></p>
+<p>Por defecto, MkDocs usa el icono <img alt="MkDocs favicon" src="img/favicon.ico" /></p>
+<p>Si queremos usar otro, crear una carpeta <code class="codehilite">img</code> junto a la de documentos, es decir, colgando de la carpeta principal del proyecto. Colocar allí un icono de nuestro gusto, y darle el nombre <code class="codehilite">favicon.ico</code>. MkDocs lo detectará automáticamente.</p>
+<h2 id="la-ayuda-de-mkdocs">La ayuda de MkDocs</h2>
+<p>La guía de usuario está <a href="https://www.mkdocs.org">aquí</a>.</p>
+<p>Para un resumen de opciones, ejecutar el comando:</p>
+<div class="codehilite"><pre><span></span>mkdocs --help
+</pre></div>
+
+<p>Para una rápida ayuda de un comando concreto, ejecutarlo añadiendo <code class="codehilite">--help</code>:</p>
+<div class="codehilite"><pre><span></span>mkdocs build --help
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="006Markdown.html" title="Formato markdown" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Formato markdown
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="008Distribuir.html" title="Publicando las páginas" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Publicando las páginas
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; El taller de jf. Creado con
+            <a href="https://www.mkdocs.org">MkDocs</a>
+            y <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>. Última actualización: 18-11-2018
+        </div>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

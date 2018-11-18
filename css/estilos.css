@@ -1,0 +1,12 @@
+.md-typeset h1 { font-size: 3em;
+                 font-weight: bold;
+                 color: teal; }
+
+.md-typeset h2 { border-bottom: 1px solid teal;
+                 color: teal;}
+
+.md-typeset h3 { color: teal;
+                 font-style: italic; }
+
+.md-typeset blockquote { border-left-width: 0;
+background-color: rgba(0, 184, 212, 0.1)}
