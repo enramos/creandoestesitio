@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.572ca0f0.css">
       
         <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -65,6 +65,7 @@
       
     
     <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
     
       <link rel="stylesheet" href="css/estilos.css">
     
@@ -692,23 +693,23 @@
 </pre></div>
 
 <p>Y activarlo modificando el archivo de configuración del proyecto <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;material&#39;</span>
 </pre></div>
 
 <p>&hellip; y al generar el sitio web, veremos el resultado</p>
 <p>Otra posibilidad es descargarlo directamente de GitHub, acudiendo a su <a href="https://github.com/squidfunk/mkdocs-material">repositorio</a> y pulsando en el botón <code class="codehilite">[clone or download]</code>. Esto resulta útil si queremos hacer muchas modificaciones en el tema para adaptarlo a nuestro gusto. En ese caso, el archivo de configuración será:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
-  <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;mkdocs-material/material&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+  <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;mkdocs-material/material&#39;</span>
 </pre></div>
 
 <h2 id="colores">Colores</h2>
 <p>Este tema define los colores de acuerdo al juego definido en <a href="https://www.materialui.co">la biblioteca material de google</a>. Podemos configurarlo de la siguiente forma:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">palette</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">primary</span><span class="p p-Indicator">:</span> <span class="s">&#39;indigo&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">accent</span><span class="p p-Indicator">:</span> <span class="s">&#39;indigo&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">palette</span><span class="p">:</span>
+    <span class="nt">primary</span><span class="p">:</span> <span class="s">&#39;indigo&#39;</span>
+    <span class="nt">accent</span><span class="p">:</span> <span class="s">&#39;indigo&#39;</span>
 </pre></div>
 
 <p>Los nombres de colores son case-insensitive. Los posibles valores son <code class="codehilite">red</code>, <code class="codehilite">pink</code>, <code class="codehilite">purple</code>, <code class="codehilite">deep purple</code>, <code class="codehilite">indigo</code>, <code class="codehilite">blue</code>, <code class="codehilite">light blue</code>, <code class="codehilite">cyan</code>, <code class="codehilite">teal</code>, <code class="codehilite">green</code>, <code class="codehilite">light green</code>, <code class="codehilite">lime</code>, <code class="codehilite">yellow</code>, <code class="codehilite">amber</code>, <code class="codehilite">orange</code>, <code class="codehilite">deep orange</code>, <code class="codehilite">brown</code>, <code class="codehilite">grey</code>, <code class="codehilite">blue grey</code> y
@@ -718,59 +719,59 @@
 <p>El valore por defecto es: <code class="codehilite">indigo</code>.</p>
 <h2 id="fuente">Fuente</h2>
 <p>Por defecto la fuente es <code class="codehilite">Roboto</code> y <code class="codehilite">Roboto Mono</code>. Véase <a href="https://fonts.google.com/specimen/Roboto">referencia</a>. Ambas fuentes forman parte de <a href="https://fonts.google.com">Google Fonts</a> y podemos cambiarlas por otras, por ejemplo, <a href="https://fonts.google.com/specimen/Ubuntu">Ubuntu font family</a>.</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">font</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">&#39;Ubuntu&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">code</span><span class="p p-Indicator">:</span> <span class="s">&#39;Ubuntu</span><span class="nv"> </span><span class="s">Mono&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">font</span><span class="p">:</span>
+    <span class="nt">text</span><span class="p">:</span> <span class="s">&#39;Ubuntu&#39;</span>
+    <span class="nt">code</span><span class="p">:</span> <span class="s">&#39;Ubuntu</span><span class="nv"> </span><span class="s">Mono&#39;</span>
 </pre></div>
 
 <p>Podemos desactivar las fuentes proporcionadas con:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">font</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">font</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div>
 
 <h2 id="logo">Logo</h2>
 <p>El icono por defecto es: <code class="codehilite">school</code>. Debe tener una resolución mínima de 128x128, dejando espacio en los costados, y presentando un contraste suficiente con el color de fondo. La forma de establecer otro icono es poniéndolo en la carpeta <code class="codehilite">docs/images</code>, y configurándolo con:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/logo.svg&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">logo</span><span class="p">:</span> <span class="s">&#39;images/logo.svg&#39;</span>
 </pre></div>
 
 <p>Otra posibilidad es hacer referencia por su nombre a alguno de los definidos en <a href="https://material.io/icons/">Material Design icon font</a>. Por ejemplo:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">icon</span><span class="p p-Indicator">:</span> <span class="s">&#39;cloud&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">logo</span><span class="p">:</span>
+    <span class="nt">icon</span><span class="p">:</span> <span class="s">&#39;cloud&#39;</span>
 </pre></div>
 
 <h2 id="idiomas">Idiomas</h2>
 <p>Podemos especificar el idioma de la página con:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="s">&#39;es&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">language</span><span class="p">:</span> <span class="s">&#39;es&#39;</span>
 </pre></div>
 
 <p>Siendo &lsquo;en&rsquo; el valor por defecto.</p>
 <p>Para establecer el idioma para las búsquedas escribimos:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">language</span><span class="p p-Indicator">:</span> <span class="s">&#39;es,</span><span class="nv"> </span><span class="s">en&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
+  <span class="nt">search</span><span class="p">:</span>
+    <span class="nt">language</span><span class="p">:</span> <span class="s">&#39;es,</span><span class="nv"> </span><span class="s">en&#39;</span>
 </pre></div>
 
 <h2 id="favicon">Favicon</h2>
 <p>El valor por defecto es <code class="codehilite">assets/images/favicon.png</code>. Puede cambiarse mediante:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">favicon</span><span class="p p-Indicator">:</span> <span class="s">&#39;assets/images/favicon.ico&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">favicon</span><span class="p">:</span> <span class="s">&#39;assets/images/favicon.ico&#39;</span>
 </pre></div>
 
 <h2 id="pestanas">Pestañas</h2>
 <p>Material contempla la posibilidad de un nivel superior en forma de menú horizontal. Activarlo con:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">tabs</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">feature</span><span class="p">:</span>
+    <span class="nt">tabs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div>
 
 <h2 id="enlace-a-repositorio">Enlace a repositorio</h2>
 <p>Para añadir un enlace al repositorio de documentación, configurar en <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">repo_name</span><span class="p p-Indicator">:</span> <span class="s">&#39;squidfunk/mkdocs-material&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/squidfunk/mkdocs-material&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">repo_name</span><span class="p">:</span> <span class="s">&#39;squidfunk/mkdocs-material&#39;</span>
+<span class="nt">repo_url</span><span class="p">:</span> <span class="s">&#39;https://github.com/squidfunk/mkdocs-material&#39;</span>
 </pre></div>
 
 <p>El nombre del repositorio aparecerá junto al recuadro de búsqueda o en la barra de navefación, dependiendo del tamaño de la ventana.</p>
@@ -784,29 +785,29 @@
 <h2 id="enlaces-a-redes-sociales">Enlaces a redes sociales</h2>
 <p>Podemos mostrar redes sociales en el pie de página usando la fuente <a href="http://fontawesome.io/icons/">FontAwesome</a>. El parámetro <code class="codehilite">type</code> mostrará el nombre del servicio, y 
 <code class="codehilite">link</code> la URL a enlazar:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">social</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;github&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/squidfunk&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;twitter&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/squidfunk&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;linkedin&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://linkedin.com/in/squidfunk&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
+  <span class="nt">social</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;github&#39;</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="s">&#39;https://github.com/squidfunk&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;twitter&#39;</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="s">&#39;https://twitter.com/squidfunk&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;linkedin&#39;</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="s">&#39;https://linkedin.com/in/squidfunk&#39;</span>
 </pre></div>
 
 <p>Los enlaces se muestran en ese orden, y <code class="codehilite">type</code> debe coincidir con el nombre definido en <a href="http://fontawesome.io/icons/">FontAwesome</a>. Se añadirá automáticamente <code class="codehilite">fa</code>, por lo que <code class="codehilite">github</code> se convertirá en <code class="codehilite">fa fa-github</code>.</p>
 <h2 id="google-analytics">Google Analytics</h2>
 <p>MkDocs facilita la integración con Google Analytics, lo que permite analizar el uso de nuestro repositorio. Podemos activarlo mediante el archivo de configuración:
 <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">google_analytics</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;UA-XXXXXXXX-X&#39;</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;auto&#39;</span>
 </pre></div>
 
 <h2 id="disqus">Disqus</h2>
 <p><em>Material for MkDocs</em> está integrado con <a href="https://disqus.com">Disqus</a>, lo que permite una sección de comentarios. En la configuración tenemos que añadir nuestro nombre:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">disqus</span><span class="p p-Indicator">:</span> <span class="s">&#39;miNombre&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
+  <span class="nt">disqus</span><span class="p">:</span> <span class="s">&#39;miNombre&#39;</span>
 </pre></div>
 
 <p>La sección de comentarios se insertará en todas las páginas excepto <em>index</em>. En la tabla de contenido se generará un enlace a la sección de comentarios.</p>
@@ -817,9 +818,9 @@
 <p>Disqus puede establecerse o desactivarse para determinadas páginas mediante metadatos.</p>
 <h2 id="arquitectura-del-tema">Arquitectura del tema</h2>
 <p>Si queremos hacer modificaciones al tema <em>Material</em>, tendremos que configurar <em>mkdocs.yml</em> como de costumbre:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
-  <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;tema&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;material&#39;</span>
+  <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;tema&#39;</span>
 </pre></div>
 
 <p>La estructura del directorio del tema debe ser reflejo de la del tema original. Todo archivo en la capeta apuntada por <code class="codehilite">custom_dir</code> reemplazará al original con el mismo nombre. Además, podemos añadir nuevos ficheros.</p>
@@ -995,7 +996,7 @@
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 03-12-2018
+            Material for MkDocs</a>. Última actualización: 04-01-2019
         </div>
       </div>
       
@@ -1007,7 +1008,7 @@
       
     </div>
     
-      <script src="assets/javascripts/application.583bbe55.js"></script>
+      <script src="assets/javascripts/application.b41f3d20.js"></script>
       
         
         

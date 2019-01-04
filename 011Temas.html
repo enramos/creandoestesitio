@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.572ca0f0.css">
       
         <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -65,6 +65,7 @@
       
     
     <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
     
       <link rel="stylesheet" href="css/estilos.css">
     
@@ -744,9 +745,9 @@
 
 <p>Para modificar un archivo, tenemos que copiarlo a nuestro proyecto, ubicándolo en una carpeta de igual nombre que en el tema original. <em>MkDocs</em> tomará con prioridad los archivos locales.</p>
 <p>Las carpetas con archivos del tema deben situarse en una carpeta que &ldquo;cuelgue&rdquo; de la principal del proyecto, en paralelo a la carpeta de documentos. La indicamos en el archivo de configuración:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
-    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">tema/</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+    <span class="nt">custom_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">tema/</span>
 </pre></div>
 
 <p>Con esto le estamos diciendo que use el tema <em>mkdocs</em>, pero que acuda a nuestra carpeta <em>/tema/</em> para ver si hay archivos personalizados, que tienen preferencia sobre los originales.</p>
@@ -766,9 +767,9 @@
 
 <p>Los archivos incluidos en la carpeta <em>/tema/</em> reemplazarán los originales con el mismo nombre o se añadirán al tema.</p>
 <p>Podríamos copiar en esa carpeta todo el tema original completo, y en el archivo de configuración escribir:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
-    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">tema/</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+    <span class="nt">custom_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">tema/</span>
 </pre></div>
 
 <p>Si no definimos un tema ni una carpeta para alojar el mismo, MkDocs usará el tema por defecto.</p>
@@ -785,15 +786,15 @@ tema/
 </pre></div>
 
 <p>&hellip; escribiremos lo siguiente en <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
-    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;tema/&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
+    <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;tema/&#39;</span>
 </pre></div>
 
 <p>&hellip; y estaremos usando como tema los archivos y plantillas de la carpeta <em>/tema/</em>. Pero si escribiéramos:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">otro_tema</span>
-    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;tema/&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">otro_tema</span>
+    <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;tema/&#39;</span>
 </pre></div>
 
 <p>lo que estaríamos haciendo es usar otro tema reescribiendo <em>main.html</em>.</p>
@@ -1146,7 +1147,7 @@ tema/
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 03-12-2018
+            Material for MkDocs</a>. Última actualización: 04-01-2019
         </div>
       </div>
       
@@ -1158,7 +1159,7 @@ tema/
       
     </div>
     
-      <script src="assets/javascripts/application.583bbe55.js"></script>
+      <script src="assets/javascripts/application.b41f3d20.js"></script>
       
         
         

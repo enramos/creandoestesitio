@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.572ca0f0.css">
       
         <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -65,6 +65,7 @@
       
     
     <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
     
       <link rel="stylesheet" href="css/estilos.css">
     
@@ -864,13 +865,13 @@ site/
 </pre></div>
 
 <p>MkDocs convertirá todos los archivos markdown que encuentre en la carpeta <em>docs</em>, pero para añadirlos a la barra de navegación de nuestra futura página web, debemos crear una lista <code class="codehilite">nav</code> en el archivo de configuración <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
-<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 1</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 2</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
+<div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Inicio</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Capítulo 1</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Capítulo 2</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Acerca de</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Resumen de opciones</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
 </pre></div>
 
 <div class="admonition note">
@@ -881,14 +882,14 @@ site/
 <p>La ubicación y nombre de archivos se escribe con referencia a la carpeta <code class="codehilite">docs</code>. Por ejemplo, <code class="codehilite">index.md</code> se refiere a <code class="codehilite">miproyecto/docs/index.md</code>.</p>
 <p>El texto indicado a la izquierda de los dos puntos <code class="codehilite">:</code> se mostrará en la barra de navegación. A la derecha de los dos puntos se indica el archivo a asociar a esa entrada.</p>
 <p>Podemos crear un segundo nivel desplegable de navegación creando subsecciones en la lista <code class="codehilite">nav</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
-<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulos</span><span class="p p-Indicator">:</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 1</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
-        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Capítulo 2</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
+<div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Inicio</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Capítulos</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">Capítulo 1</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo1.md</span>
+        <span class="p p-Indicator">-</span> <span class="nt">Capítulo 2</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">capitulos/capitulo2.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Acerca de</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Resumen de opciones</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">opc/opciones.md</span>
 </pre></div>
 
 <p>Nótese que los nombre de subsecciones no deben llevar archivo alguno asociado tras los dos puntos <code class="codehilite">:</code>.</p>
@@ -898,12 +899,12 @@ site/
 <p>En muchos sitios web es tradición que la página principal se llame <code class="codehilite">index.html</code>. MkDocs buscará un archivo que se llame <code class="codehilite">index.md</code>, o en su defecto, <code class="codehilite">readme.md</code>, convirtiendo cualquiera de los dos en <code class="codehilite">index.html</code>. Si existieran ambos archivos <em>markdown</em>, se ignorará <code class="codehilite">readme.md</code>.</p>
 <h2 id="escogiendo-un-tema">Escogiendo un tema</h2>
 <p>La disposición del contenido de la página resultante, su aspecto final, tipo de letra, colores, etc, se corresponde con el &ldquo;tema&rdquo; seleccionado, que por defecto es &ldquo;mkdocs&rdquo;. Opcionalmente, podemos declararlo explícitamente en el archivo de configuración con el parámetro <code class="codehilite">theme</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
-<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Inicio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Acerca de</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Resumen de opciones</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">opciones.md</span>
-<span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+<div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Inicio</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Acerca de</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">acerca.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Resumen de opciones</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">opciones.md</span>
+<span class="nt">theme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
 </pre></div>
 
 <p>Ya vimos en el caso de <em>Jekyll</em> que un tema es una colección de plantillas y archivos. En el caso de MkDocs, podemos examinar la lista de ficheros que componen este tema acudiendo a su <a href="https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes/mkdocs">repositorio</a>. Como sucede con <em>Jekyll</em>, <em>MkDocs</em> tomará estos archivos y los unirá a nuestros documentos para generar las páginas web.</p>
@@ -989,7 +990,7 @@ site/
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 03-12-2018
+            Material for MkDocs</a>. Última actualización: 04-01-2019
         </div>
       </div>
       
@@ -1001,7 +1002,7 @@ site/
       
     </div>
     
-      <script src="assets/javascripts/application.583bbe55.js"></script>
+      <script src="assets/javascripts/application.b41f3d20.js"></script>
       
         
         

@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.572ca0f0.css">
       
         <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
       
@@ -55,7 +55,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -65,6 +65,7 @@
       
     
     <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
     
       <link rel="stylesheet" href="css/estilos.css">
     
@@ -618,7 +619,7 @@
 <h2 id="el-archivo-de-configuracion">El archivo de configuración</h2>
 <p>El proceso de conversión y generación del sitio web se configura en buena parte adaptando las definiciones de parámetros en el archivo <code class="codehilite">mkdocs.yml</code>, que es un fichero de texto en formato <a href="https://es.wikipedia.org/wiki/YAML">YAML</a> ubicado en la carpeta principal.</p>
 <p>Todos los parámetros son opcionales, excepto <code class="codehilite">site_name</code>, que representa el título del proyecto. Por lo tanto, un archivo <code class="codehilite">mkdocs.yml</code> en su expresión mínima puede ser:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
+<div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mi proyecto</span>
 </pre></div>
 
 <h2 id="formato-yaml">Formato YAML</h2>
@@ -713,7 +714,7 @@ opciones:
 <li>
 <p>repo_url</p>
 <p>Muestra en cada página un enlace al repositorio indicado por esta variable (GitHub, Bitbucket, GitLab, &hellip;). El valor por defecto es <code class="codehilite">null</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/misitio</span>
+<div class="codehilite"><pre><span></span><span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/misitio</span>
 </pre></div>
 
 </li>
@@ -761,7 +762,7 @@ edit_uri: root/path/docs/
 <li>
 <p>google_analytics</p>
 <p>Configura Google analytics. Por defecto es <code class="codehilite">null</code>. Por ejemplo:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;UA-36723568-3&#39;</span><span class="p p-Indicator">,</span> <span class="s">&#39;mkdocs.org&#39;</span><span class="p p-Indicator">]</span>
+<div class="codehilite"><pre><span></span><span class="nt">google_analytics</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;UA-36723568-3&#39;</span><span class="p p-Indicator">,</span> <span class="s">&#39;mkdocs.org&#39;</span><span class="p p-Indicator">]</span>
 </pre></div>
 
 </li>
@@ -781,46 +782,46 @@ edit_uri: root/path/docs/
 </ul>
 <h2 id="la-barra-de-navegacion">La barra de navegación</h2>
 <p>El apartado <code class="codehilite">nav</code> se usa para determinar el formato de la navegación. Veamos, por ejemplo, una barra con tres entradas:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&#39;Introducción&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;index.md&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="s">&#39;Guía</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">usuario&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;user-guide.md&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="s">&#39;Acerca</span><span class="nv"> </span><span class="s">de&#39;</span><span class="p p-Indicator">:</span> <span class="s">&#39;about.md&#39;</span>
+<div class="codehilite"><pre><span></span><span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">&#39;Introducción&#39;</span><span class="p">:</span> <span class="s">&#39;index.md&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="nt">&#39;Guía de usuario&#39;</span><span class="p">:</span> <span class="s">&#39;user-guide.md&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="nt">&#39;Acerca de&#39;</span><span class="p">:</span> <span class="s">&#39;about.md&#39;</span>
 </pre></div>
 
 <p>Todos los paths deben ser relativos a la carpeta donde se ubica el archivo <code class="codehilite">mkdocs.yml</code>.</p>
 <p>Los elementos pueden incluir enlaces a sitios externos. En este caso, los títulos, que son opcionales para enlaces internos, son obligatorios para los externos.</p>
 <p>Un sitio externo puede ser una URL absoluta o relativa. Cualquier path no encontrado durante la conversión será asumido como enlace externo.</p>
 <p>Un ejemplo:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Home</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Guía de usuario</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Referencia</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/</span>
+<div class="codehilite"><pre><span></span><span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Guía de usuario</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Referencia</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/</span>
 </pre></div>
 
 <p>A veces un proyecto está alojado en un subdirectorio y queremos enlazar a otro. Podemos usar paths relativos:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/foo/</span>
+<div class="codehilite"><pre><span></span><span class="nt">site_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://ejemplo.com/foo/</span>
 
-<span class="l l-Scalar l-Scalar-Plain">nav</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Home</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">../</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Guía de usuario</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Referencia</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/ref/</span>
+<span class="nt">nav</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Guía de usuario</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user-guide.md</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Referencia</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/ref/</span>
 </pre></div>
 
 <p>Véase que <code class="codehilite">site_url</code> indica que el proyecto está en la carpeta <code class="codehilite">/foo/</code> dentro del dominio. Por lo tanto, <code class="codehilite">Home</code> tiene un enlace relativo que apunta a <code class="codehilite">https://ejemplo.com/</code>. La tercera entrada usa un path absoluto apuntando a <code class="codehilite">https://ejemplo.com/ref/</code>.</p>
 <p>Por defecto, si no especificamos <code class="codehilite">nav</code>, esta contendrá una lista de todos los documentos <em>markdown</em> apuntados por <code class="codehilite">docs_dir</code>, incluyendo subdirectorios, y ordenando las páginas alfabéticamente.</p>
 <h2 id="parametros-del-tema-utilizado">Parámetros del tema utilizado</h2>
 <p>La opción <code class="codehilite">theme</code> establece el tema a utilizar. Puede ser el nombre del tema o bien una lista de parámetros. En el primer caso:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
 </pre></div>
 
 <p>Este es el valor por defecto.</p>
 <p>Un ejemplo del segundo caso:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
-    <span class="l l-Scalar l-Scalar-Plain">custom_dir</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">miTema/</span>
-    <span class="l l-Scalar l-Scalar-Plain">static_templates</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+    <span class="nt">custom_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">miTema/</span>
+    <span class="nt">static_templates</span><span class="p">:</span>
         <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mapa.html</span>
-    <span class="l l-Scalar l-Scalar-Plain">include_sidebar</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="nt">include_sidebar</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div>
 
 <p>Los parámetros de un tema pueden ser:</p>
@@ -854,7 +855,7 @@ edit_uri: root/path/docs/
 <li>
 <p>Archivos css</p>
 <p>El parámetro <code class="codehilite">extra_css</code> es una lista de archivos <code class="codehilite"><span class="na">.css</span></code>, ubicados en la carpeta de documentos, que queremos incluir en la compilación. Por defecto es una lista vacía, que en lenguaje Python se representa mediante <code class="codehilite">[]</code>.</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_css</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">extra_css</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/estilos.css</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/masEstilos.css</span>
 </pre></div>
@@ -871,8 +872,8 @@ edit_uri: root/path/docs/
 </ul>
 <h2 id="extra">Extra</h2>
 <p>Este apartado es una lista de parámetros que podemos añadir a nuestro gusto cuando diseñemos temas. Por ejemplo, si queremos crear una variable <code class="codehilite">version</code> para mostrarla en las páginas:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+<div class="codehilite"><pre><span></span><span class="nt">extra</span><span class="p">:</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
 </pre></div>
 
 <p>Por defecto, <code class="codehilite">extra</code> es un conjunto vacío de claves.</p>
@@ -926,49 +927,49 @@ edit_uri: root/path/docs/
 <p>MkDocs es un programa Python que traduce de <em>markdown</em> a HTML utilizando las funcionalidades proporcionadas por la biblioteca <a href="https://python-markdown.github.io/">Python Markdown</a>, que a su vez admite una gran variedad de <a href="https://python-markdown.github.io/extensions/">extensiones</a> para ampliar los recursos de sintaxis, como <code class="codehilite">meta</code>, <code class="codehilite">toc</code>, <code class="codehilite">tables</code>,
 o <code class="codehilite">fenced_code</code>.</p>
 <p>Por ejemplo, para utilizar <a href="https://python-markdown.github.io/extensions/smarty/">SmartyPants</a>, escribiremos:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">smarty</span>
 </pre></div>
 
 <p>Algunas extensiones tiene  opciones de configuración. Para asignarles un valor, añadir para cada una un mapa de elementos <em>clave:valor</em>.</p>
 <p>Por ejemplo, la extensión <code class="codehilite">toc</code> permite usar <em>permalinks</em>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
-        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
+        <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
 </pre></div>
 
 <p>Véase que tras la extensión se ponen dos puntos y a continuación la lista de opciones:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
-        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
-        <span class="l l-Scalar l-Scalar-Plain">separator</span><span class="p p-Indicator">:</span> <span class="s">&quot;_&quot;</span>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
+        <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+        <span class="nt">separator</span><span class="p">:</span> <span class="s">&quot;_&quot;</span>
 </pre></div>
 
 <p>Si la extensión utilizada no requiere opciones, basta con incluirla en la lista de extensiones:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">smarty</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span><span class="p p-Indicator">:</span>
-        <span class="l l-Scalar l-Scalar-Plain">permalink</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
+        <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sane_lists</span>
 </pre></div>
 
 <h2 id="configurar-complementos-plugins">Configurar complementos (plugins)</h2>
 <p>Podemos aumentar las funcionalidades de <em>MkDocs</em> instalando complementos con el comando <em>pip</em>. De serie, <em>MkDocs</em> proporciona el complemento <em>Search</em> para realizar búsquedas, que es el único que se activa automáticamente.</p>
 <p>Para activar otros complementos, hay que especificar la lista en el archivo de configuración:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">plugins</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">otros_complementos</span>
 </pre></div>
 
 <p>Para desactivar <em>search</em>, escribir una lista <code class="codehilite">plugins</code> que no incluya este complemento. El efecto será que desaparecerá el recuadro de búsqueda de la barra superior.</p>
 <p>Para asignar una lista vacía al parámetro <code class="codehilite">plugins</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[]</span>
+<div class="codehilite"><pre><span></span><span class="nt">plugins</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
 </pre></div>
 
 <p>En grandes proyectos podemos mejorar el rendimiento de las búsquedas usando la opción <strong>prebuild_index</strong> del complemento <em>search</em>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">plugins</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span><span class="p p-Indicator">:</span>
-        <span class="l l-Scalar l-Scalar-Plain">prebuild_index</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="codehilite"><pre><span></span><span class="nt">plugins</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
+        <span class="nt">prebuild_index</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div>
 
 <p>Por defecto es <em>false</em>.</p>
@@ -1032,7 +1033,7 @@ o <code class="codehilite">fenced_code</code>.</p>
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 03-12-2018
+            Material for MkDocs</a>. Última actualización: 04-01-2019
         </div>
       </div>
       
@@ -1044,7 +1045,7 @@ o <code class="codehilite">fenced_code</code>.</p>
       
     </div>
     
-      <script src="assets/javascripts/application.583bbe55.js"></script>
+      <script src="assets/javascripts/application.b41f3d20.js"></script>
       
         
         
